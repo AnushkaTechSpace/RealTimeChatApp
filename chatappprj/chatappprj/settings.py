@@ -26,7 +26,8 @@ SECRET_KEY = "django-insecure-7mv3o)8i#t^l0)a_c#ahza@qhoj*fvg(oodhr)^)tkmi((%(m+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['chat.onrender.com']
+
 
 
 # Application definition
@@ -51,6 +52,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "'whitenoise.middleware.WhiteNoiseMiddleware'"
 ]
 
 ROOT_URLCONF = "chatappprj.urls"
